@@ -7,10 +7,10 @@ import os
 from consts import *
 
 ENTRY_FOUND = 'ENTRY FOUND'
-ENTRY_LINES = 15
+ENTRY_LINES = 100
 
 EXIT_FOUND = 'EXIT FOUND'
-EXIT_LINES = 19
+EXIT_LINES = 100
 
 status = None
 lines = []
