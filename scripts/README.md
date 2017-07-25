@@ -5,10 +5,10 @@ Useful scripts that run complementary to blackbird.
 Tails the a given log file and sends an email when certain events are triggered i.e. Detailed summary of market entries and exits. 
 Email credentials should be placed in the `consts.py`. Usage: `python3 email_notify.py log_file`
 ```
-SENDER_EMAIL=
-SENDER_PASSWORD=
-RECEIVER_EMAIL=
-SMTP_SERVER=
+SENDER_EMAIL = <sender_email>
+SENDER_PASSWORD = <sender_password>
+RECEIVER_EMAIL = <receiver_email>
+SMTP_SERVER = <smtp_server_address>
 ```
 ## Statistics
 Compute various statistics including spreads of a given market pair. Usage `python stats.py log_file`
