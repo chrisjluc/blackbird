@@ -11,4 +11,6 @@ build
 # Scripts
 scripts/consts.py
 *.pyc
+*.swo
+*.swp
 

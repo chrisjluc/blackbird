@@ -18,9 +18,8 @@ lines = []
 def send_email():
     subject = status
     message = ''.join(lines)
-    command = 'sendEmail -o tls=yes -f {} -t {} -s smtp.gmail.com:587 -xu {} -xp {} -u "{}" -m "{}"'.format(
-            SENDER_EMAIL, RECEIVER_EMAIL, SENDER_EMAIL, SENDER_PASSWORD, subject, message)
-    print(command)
+    command = 'sendEmail -o tls=yes -f {} -t {} -s {} -xu {} -xp {} -u "{}" -m "{}"'.format(
+            SENDER_EMAIL, RECEIVER_EMAIL, SMTP_SERVER, SENDER_EMAIL, SENDER_PASSWORD, subject, message)
     os.system(command)
 
 def check_and_set_status(code, line):
