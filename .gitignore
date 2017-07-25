@@ -7,3 +7,8 @@ blackbird.db
 sqlite3
 core
 build
+
+# Scripts
+scripts/consts.py
+*.pyc
+
